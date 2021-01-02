@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>섹션(Sections)요소들과 메인(Main)요소</title>
+</head>
+
+<body>
+	<!-- 
+		1. html/root element
+		HTML문서에서 html 요소는 최상단 요소(root element)를 나타내며 "루트 요소"라고 부른다
+
+			<head>
+			- html 요소의 첫 번째 요소로 해당 문서에 대한 정보 메타데이터(meta data)의 집합을 정의
+
+			<body>
+			- html 요소의 두 번재 요소로 본문 영역을 표시한다.(본문 영역은 실제 콘텐츠 표현되는 공간)
+			- 문서의 텍스트, 하이퍼링크, 이미지, 리스트 등과 같은 모든 콘텐츠 영역을 정의
+
+			[참고]
+			boby 요소는 문서에서 단 한 번만 사용 가능
+
+		2. section elements
+		HTML5에서 구조를 설계할 수 다양한 구조 관련된 요소들
+
+			<header>
+			- 웹 페이지의 제목, 로고, 목차, 검색 등을 포함
+
+			[참고]
+			- header 요소는 section 요소 내부에 넣어도 되고, 필요에 따라서 묶어 분리해서 사용된다.
+
+			<section>
+			- 내용적 흐름과 구조를 만들기 위해 나누는 용도로 사용
+			- 소개, 뉴스 항목, 연락처 정보 등과 같은 관련이 있는 내용을 section요소로 묶어서 주제별로 표시
+
+			[참고]	
+			- 콘텐츠에 포함된 독립적인 성향이 크다면 section요소 대신에 article요소를 사용하는 것을 권장
+
+			<nav>
+			- 웹 페이지에 포함된 탐색 링크를 포함
+
+			[참고]
+			내용을 쉽게 이해할 수 있도록 nav 요소 내부에는 비순차 목록(ul)을 사용한다. 
+			사이트의 모든 링크를 nav에 포함하는 것은 아니며, 주로 사이트를 탐색하는 
+			링크를 포함한다. 사이트 하단에 위치한 footer요소로도 충분하다.
+
+			<article>
+			- 본문과 별개로 구성되어 다른 영역에 영향을 주거나 받지 않고 독립적으로 배포되거나 재사용 가능
+			- article요소는 잡지, 신문, 논문, 보고서, 에세이, 블로그 기타 소설 미디어 등 일 수 있다
+			- 웹 접근성 측면에서 반드시 제목(h1 ~ h6)요소를 포함시켜 식별해야 한다
+			- article 요소에 section요소를 포함할 수 있고 반대로 section요소에 내부에 article요소를 포함할 수 있다
+
+			[예시]
+			<article>
+				<h2>기사 제목</h2>
+					...
+			</article>
+
+			<aside>
+			- 웹 페이지에 사이드바에 해당 되는 부분으로 본문 내용과 직접적인 관련성이 적거나 없는 내용으로 구성된다
+
+			<main>
+			- main요소는 body요소 안의 메인 콘텐츠에 해당
+			- main요소는 문서 내에서 한 번만 나오는 것을 사용한다
+			- 즉, 2개 이상이면 안되고 사용하지 않는 요소는 화면에서 감춤(hidden)처리한다
+
+			[참고]
+			목차에 해당되지 않는 것, 즉 표현으로 하는 것은 섹션(section)을 사용하면 안된다.
+
+			[예시]
+			<main>...</main>
+			<main hidden>...</main>
+			<main hidden>...</main>
+				
+			<footer> 
+			- <footer> 요소는 일반적으로 저자, 링크, 저작권 등을 포함하는데 사용
+
+			[참고]	
+			- footer 요소는 section 요소 내부에 넣어도 되고, 필요에 따라서 묶어 분리해서 사용된다.
+	 -->
+	<header>
+		<h1>
+			<a href="/">JTBC</a>
+		</h1>
+		<nav id="global-navigation">
+			<h2>글로벌 네비게이션</h2>
+		</nav>
+		<aside id="review-banner">
+			<h3>리뷰 배너</h3>
+		</aside>
+	</header>
+	<main>
+		<article id="on-air-banner">
+			<h2>온에어 배너</h2>
+		</article>
+		<section id="realtime-vod">
+			<!-- header 필수는 아니다 -->
+			<header>
+				<h2>리얼타임 VOD</h2>
+			</header>
+		</section>
+		<article id="daliy-programs">
+			<h2>데일리 프로그램 소개</h2>
+		</article>
+		<section id="news">
+			<h2>뉴스</h2>
+		</section>
+		<section id="program">
+			<h2>JTBC 프로그램</h2>
+			<article id="jdbc-new-room">
+				<h3>JTBC 뉴스룸</h3>
+				<!-- <section></section> article 내에 필요한다면 section을 추가 할 수 있다. -->
+			</article>
+		</section>
+		<aside id="advertising">
+			<h4>광고</h4>
+		</aside>
+		<section id="trailer">
+			<h2>예고편</h2>
+		</section>
+		<section id="notice">
+			공지사항
+		</section>
+	</main>
+	<footer>
+		<nav id="footre-navigation">
+			<h3>푸터 내비게이션</h3>
+		</nav>
+	</footer>
+</body>
+
+</html>

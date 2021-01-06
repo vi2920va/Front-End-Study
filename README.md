@@ -6,3 +6,4 @@
 |02|HTML|Quotation, Text Formatting elements||
 |03|HTML|html/root element, section elements, main element, semantic element, non semantic elements||
 |04|HTML|grouping elements, embedded elements||
+|05|HTML|table element, form element||

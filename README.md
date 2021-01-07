@@ -7,3 +7,4 @@
 |03|HTML|html/root element, section elements, main element, semantic element, non semantic elements||
 |04|HTML|grouping elements, embedded elements||
 |05|HTML|table element, form element||
+|06|HTML|interactive control, script element/noscript element, user interaction attributes, meta elements||

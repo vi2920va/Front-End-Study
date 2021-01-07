@@ -1,0 +1,51 @@
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  .demo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container {
+    margin-top: 200px;
+    width: 80%;
+  }
+
+  .dialog {
+    max-width: 415px;
+    width: 80%;
+    border: 2px solid #3b99fc;
+    border-radius: 6px;
+    box-shadow: 1px 7px 11px rgba(118, 118, 118, 0.32);
+  }
+
+  .dialog-headline {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .dialog summary {
+    width: 100%;
+  }
+
+  .dialog dl {
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-top: 1px solid #3b99fc;
+    padding-top: 20px;
+  }
+
+  .dialog dt {
+    float: left;
+    width: 145px;
+    margin-right: 10px;
+  }
+
+  .dialog dd {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }

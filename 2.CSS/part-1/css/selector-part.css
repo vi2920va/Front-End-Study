@@ -1,0 +1,146 @@
+/*
+----------------------------------------------------------------------------------------------------
+CSS 선택자(Selector) 
+----------------------------------------------------------------------------------------------------
+HTML과 달리 CSS는 대소문자를 가린다. 그러므로 내가 적용할 대상과 완벽히 일치해야 된다.
+
+[자손 선택자, 하위 선택자 (Descendent Selector)]
+    h1 abrr,
+    .note  abbr {...}
+
+[자식 선택자 (Child Selector)]
+	. parent > .child {...}  - 부모 요소의 직접적인 자식 요소에게만 적용.
+
+
+[속성 선택자 (Attribute Selector)]	
+	[id]	 		        {...}
+	[class] 		        {...}
+	[title]  			    {...}
+	[shape] [title] 	    {...}
+
+	[id="about-css"]        {...}
+	#about-css 			    {...}
+
+	[class ="note"] 	    {...}		- 클래스 속성 선택자는 정확하게 note 에게만 적용.
+	.note				    {...}
+
+	[href^="http://"]	    {...} 	- ^ 기호 사용시 http 단어로 시작한다면 의미 
+	[src$=".svg"]			{...}	- $ 기호 사용시 확장자 svg 모든 것을 찾는다
+    [src="phone"]			{...}   - src에 포함된 phone 단어를 모두 찾는다.
+----------------------------------------------------------------------------------------------------
+    [가상 클래스 (Pseudo Class)]
+
+    :link         { ... }  -  방문 전
+    :visited      { ... }  - 한 번 방문 후
+
+    :hover        { ... } - 마우스가 올라갔을 때
+    :active       { ... } - 마우스가 클릭 했을 때
+
+    :focus        { ... } - 키보드가 Tab Key 누르면 이동
+    :focus:hover  { ... } - 포커스가 맞춰진 상태에서 마우스가 접근하면, 연이어 사용 가능
+    :focus:active { ... } - 포커스가 맞춰진 상태에서 마우스를 누르면
+
+    :first-child  { ... } - 첫 번째 자식을 선택
+    :last-child   { ... } - 마지막을 자식을 선택
+    :nth-child(n) { ... } - 순서, 계산식, 홀수(even), 짝수(odd) 선택
+
+    :lang(ko)     { ... }
+----------------------------------------------------------------------------------------------------
+    [가상 요소 (Pseudo Element)]
+    가상 클래스와 가상 요소는 다르다. 가상 요소는 Element 만들어주는 것이다. 
+    차이점 (콜론)::두번  사용한다.(CSS3부터 문법이 바뀌었다. 알아두길..)
+    브라우저의 하휘 호환 목표로  콜론(:) 을 한 번 써도 된다. 
+
+    ::first-letter { ... } - 단락의 첫 번째 첫 글자를 변경
+    ::first-line   { ... } - 첫 줄 문자
+    ::before       { ... } - 
+    ::after        { ... }
+
+*/
+
+
+/* h1, h2, p { color: #777; } */
+
+body * {}
+
+body>* {}
+
+/* Attribute */
+/* [title][lang] { } */
+/* [id="about-css"] { outline: 3px solid #fc414b; } */
+/* #about-css{ outline: 3px solid #fc414b } */
+/* [class="note"] { outline: 3px solid #fc414b; } */
+/* [class="note box"] { outline: 3px solid #fc414b; } */
+
+.box {}
+
+.note {}
+
+/* [title^="Scalable"] { outline: 3px solid #fc414b; } */
+/* [title$="Language"] { outline: 3px solid #fc414b; } */
+/* [title*="Markup"] { outline: 3px solid #fc414b; } */
+/* ------------------------------------------------------------------------------------------- */
+/* :lang(en) { font-family: "Times New Roman"; } */
+
+/* :lang(ko) { font-family: "Spoq Han Sans"; } */
+
+/* a:link { color: #ff487c; } */
+
+/* a:visited { color: #32c29a; } */
+
+/* h1:hover, h2:hover, p:hover { color: #222; } */
+
+/* p:active { background: #ff0; } */
+
+/* a:focus {
+    outline-offset: 3px;
+    outline: 3px solid #333;
+} */
+/* 
+a:focus:active {
+    outline: none;
+    background-color: #fe8440;
+} */
+
+/*  first-child  */
+/* .link-list li:first-child { outline: 3px solid #ff0; }  */
+
+/* last-child */
+/* .link-list li:last-child { outline: 3px solid #4ec13f; } */
+
+/* nth-child(n) */
+/* .link-list li:nth-child(1) { outline: 3px solid #ff0; } */
+/* .link-list li:nth-child(2) { outline: 3px solid #fe8440; } */
+/* .link-list li:nth-child(4) { outline: 3px solid #333; } */
+/* .link-list li:nth-child(2n) { outline: 3px solid #ff0; } */
+/* .link-list li:nth-child(2n-1) { outline: 3px solid #4ec13f; } */
+
+/* :nth-child(n) 2의 배수 */
+/* .link-list li:nth-child(odd) { outline: 3px solid #ff0; } */
+
+/* :nth-child(n) 홀수  */
+/* .link-list li:nth-child(even) { outline: 3px solid #4ec13f; } */
+/* ------------------------------------------------------------------------------------------- */
+/* p::first-line {
+    font-weight: bold;
+    font-size: 20px;
+} */
+
+abbr::before{
+    content: '[';
+    font-style: normal;
+}
+abbr::after{
+    content: ']';
+    font-style: normal;
+}
+
+figure::before{
+    content: 'Figure';
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 0.3em 0.8em;
+    background: #222;
+    color: #fff;
+}

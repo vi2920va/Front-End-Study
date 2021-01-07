@@ -8,3 +8,4 @@
 |04|HTML|grouping elements, embedded elements||
 |05|HTML|table element, form element||
 |06|HTML|interactive control, script element/noscript element, user interaction attributes, meta elements||
+|07|CSS|css basic syntax,css styling, basic selector, grouping selector, combinator, pseudo||

@@ -12,3 +12,4 @@
 |08|CSS|cascade and inheritance||
 |09|CSS|typograpy and webfont||
 |10|CSS|box-model, lists styling||
+|11|CSS|backgrounds||

@@ -10,3 +10,4 @@
 |06|HTML|interactive control, script element/noscript element, user interaction attributes, meta elements||
 |07|CSS|css basic syntax,css styling, basic selector, grouping selector, combinator, pseudo||
 |08|CSS|cascade and inheritance||
+|09|CSS|typograpy and webfont||

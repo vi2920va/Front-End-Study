@@ -1,0 +1,99 @@
+/* reset */
+div, span, h1, h2, h3,
+strong, em, b, ul, li,
+a, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+body, span, h1, h2, h3,
+strong, em, b, ul, li a,
+figure, figcaption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+body{
+	background: #1e1f21;
+}
+h1, h2, h3, em, b, strong {
+	font-style: normal;
+	font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ 
+/* animal-lists */
+.animal-lists {
+  width: 300px;
+  margin: 100px auto;
+	border: 1px solid #3e4044;
+	border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(105, 97, 97, 0.123);
+}
+
+/* animal-lists title */
+.animal-lists > h1 {
+  margin: 20px 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* animal-lists item */
+.item {
+  margin: 20px 20px;
+}
+
+/* item img  */
+.item a figure img {
+  float: left;
+	width: 98px;
+}
+
+/* item contents  */
+.item a figure figcaption {
+  float: right;
+  width: calc(100% - 105px);
+  height: 98px;
+}
+
+.item a figure figcaption em,
+.item a figure figcaption strong,
+.item a figure figcaption span {
+  display: block;
+}
+
+.item a figure figcaption em {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #955f0e;
+}
+
+.item a figure figcaption span {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.item a figure figcaption span:hover {
+  text-decoration: underline;
+}
+
+.item a figure figcaption strong {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.animal-lists ::after {
+  display: table;
+  clear: both;
+  content: "";
+}

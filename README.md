@@ -13,3 +13,4 @@
 |09|CSS|typograpy and webfont||
 |10|CSS|box-model, lists styling||
 |11|CSS|backgrounds||
+|12|CSS|floating layout||

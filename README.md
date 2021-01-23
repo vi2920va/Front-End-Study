@@ -18,3 +18,5 @@
 |14|CSS|table styling||
 |15|CSS|form styling||
 |16|CSS|2D transform, transition||
+|17|CSS|animation||
+

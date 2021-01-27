@@ -19,4 +19,4 @@
 |15|CSS|form styling||
 |16|CSS|2D transform, transition||
 |17|CSS|animation||
-
+|18|CSS|gradient, box-shadow, border-image||

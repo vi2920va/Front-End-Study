@@ -23,4 +23,5 @@
 |19|CSS|flex container, item||
 |20|CSS|multple||
 |21|CSS|grid container, item||
-|22|CSS|youtube mobile clone coding||
+|22|CSS|youtube mobile clone coding|||
+|23|JavaScript|variable, datatype||

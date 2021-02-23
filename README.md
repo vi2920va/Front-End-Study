@@ -25,3 +25,4 @@
 |21|CSS|grid container, item||
 |22|CSS|youtube mobile clone coding|||
 |23|JavaScript|variable, datatype||
+|24|JavaScript|condition statement, condition ternary expression, operators ||

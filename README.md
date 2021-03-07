@@ -29,5 +29,7 @@
 |25|JavaScript|Loops and iteration||
 |26|JavaScript|pass by value, pass by reference||
 |27|JavaScript|function/block scope, variable, function hosting||
+|28|JavaScript|IIFE||
+
 
 

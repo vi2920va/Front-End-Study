@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서객체모델(DOM) API × JavaScript</title>
+    <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" onload="if(media!=='all')media='all'"
+        rel="stylesheet" media="none">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <p class="today">
+        지금 시각은<br>
+        <time datetime="2018-03-10T08:00:45.687">
+            <span class="year">20XX</span>년
+            <span class="month">XX</span>월
+            <span class="date">XX</span>일
+            <span class="day">X</span>요일
+            <span class="hours">XX</span>시
+            <span class="minutes">XX</span>분
+            <span class="seconds">XX</span>초
+            <span class="milliseconds">XXX</span>밀리초
+        </time> 입니다.
+    </p>
+
+    <div class="wrap">
+        <figure class="cloud is-slow is-big" aria-label="크고 느린 구름"></figure>
+
+        <figure class="cloud is-normal is-regular" aria-label="보통 크기, 속도인 구름"></figure>
+    </div>
+
+    <div class="container">
+        <figure class="cloud is-fast is-small" aria-label="작고 빠른 구름"></figure>
+
+        <figure id="boy" class="boy" aria-label="서있는 소년"></figure>
+    </div>
+
+    <p class="info">
+        <kbd>space</kbd> 키를 누르세요.
+    </p>
+
+    <script src="https://goo.gl/7sKu8L"></script>
+    <script src="js/date-switch-function.js"></script>
+</body>
+
+</html>

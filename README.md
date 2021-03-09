@@ -32,7 +32,7 @@
 |28|JavaScript|IIFE||
 |29|JavaScript|close,objects(string, function, number, math, array property method)||
 |30|JavaScript|object, constructor function, instance||
-
+|31|JavaScript| Object Oriented Programming||
 
 
 

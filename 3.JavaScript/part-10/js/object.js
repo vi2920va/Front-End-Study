@@ -19,24 +19,8 @@
 
 // 손홍민 선수 정보를 담은 객체 생성
 // 출처: https://goo.gl/VxH57C
-var hm_son7 = {
-  birth: '1992년 7월 8일',
-  name: '손홍민',
-  nationality: '대한민국',
-  hometown: '춘천',
-  nickname: ['소니', '손세이셔널'],
-  hobby: ['독서', '게임'],
-  height: '182cm',
-  weight: '77kg',
-  job: '프로 축구선수',
-  position: '윙어',
-  club: '토트넘 핫스퍼(Tottenham Hotspur) F.C.',
-  picture: 'https://goo.gl/GK11yQ',
-  sns: {
-    facebook: 'https://www.facebook.com/heungminsonofficial',
-    instagram: 'https://www.instagram.com/hm_son7',
-  }
-};
+
+
 
 
 // 속성을 객체가 소유했는지 여부 확인
@@ -318,8 +302,8 @@ xx.hasOwnProperty('age'); // true
 var page = {
   category : "javaScript",
   title : "for ~ in",
-  author : "songsong",
-  date : "2020-03-19"
+  author : "vi2920va",
+  date : "2021-03-09"
 };
 
 

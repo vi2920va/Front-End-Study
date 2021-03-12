@@ -61,7 +61,7 @@ members.forEach(function (member, index){
 // array.push(item), 콤마(,)를 사용해서 여러개를 넣을 수도 있다.
 members.push({
   gender : '여성',
-  name : '현',
+  name : '송현',
   email :'euggi@gmail.com',
   picture : '...'
 });

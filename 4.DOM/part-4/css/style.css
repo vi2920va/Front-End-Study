@@ -1,0 +1,59 @@
+body {
+  margin: 50px;
+  border: 1px solid rgba(200, 100, 50, 0.5);
+  font: 16px/1.5 "Spoqa Han Sans";
+}
+
+.ovv {
+  margin-top: 50px;
+  overflow: visible;
+}
+
+div {
+  overflow: auto;
+  width: 300px;
+  height: 200px;
+  outline: 3px solid hsla(180, 0%, 0%, 0.2);
+  margin: 10px;
+  border: 1px solid hsla(180, 0%, 0%, 0.2);
+  padding: 10px;
+}
+
+p {
+  position: relative;
+  width: 550px;
+  outline: 1px solid #bbb;
+  margin: 20px;
+  border: 1px solid #aaa;
+  padding: 10px;
+  letter-spacing: 0.03em;
+  word-spacing: 0.05em;
+}
+
+p::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+}
+
+p::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  background: rgba(90, 128, 90, 0.05);
+}
+
+p:nth-child(1) { background: hsla(60, 45%, 70%, 0.2); }
+p:nth-child(2) { margin-left: 50px; background: hsla(180, 45%, 70%, 0.2); }
+p:nth-child(3) { background: hsla(240, 45%, 70%, 0.2); }
+p:nth-child(1)::before { background: hsla(60, 45%, 70%, 0.4); }
+p:nth-child(2)::before { background: hsla(180, 45%, 70%, 0.4); }
+p:nth-child(3)::before { background: hsla(240, 45%, 70%, 0.4); }

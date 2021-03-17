@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+section {
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .btn-group button.btn {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translateY(-50%);
+  text-indent: -9999px;
+  background: none;
+}
+
+.carousel .btn-group button.btn::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  content: "";
+}
+
+.carousel .btn-group button.btn.prev {
+  left: 5%;
+}
+
+.carousel .btn-group button.btn.next {
+  right: 5%;
+}
+
+.carousel .btn-group .btn.prev::after {
+  background: url("./../images/next-btn.svg") center center no-repeat;
+  transform: rotate(180deg);
+  background-size: 30px;
+}
+
+.carousel .btn-group .btn.next::after {
+  background: url("./../images/next-btn.svg") center center no-repeat;
+  background-size: 30px;
+}
+
+/* indication */
+ol.indication {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+.indication::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+ol.indication li {
+  float: left;
+  margin-right: 20px;
+}
+
+ol.indication li.active button {
+  background: #666;
+}
+
+ol.indication li:last-child {
+  margin-right: 0;
+}
+
+ol.indication li button {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  text-indent: -9999px;
+}
+
+.carousel-list li {
+  display: none;
+}
+
+.carousel-list li.active {
+  display: block;
+  width: 100%;
+}
+
+.carousel-list figure img {
+  width: 100%;
+}
+
+.carousel-list figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 80px;
+  margin-left: 10%;
+  transform: translateY(-50%);
+}
+
+.carousel-list figure figcaption h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.carousel-list a:hover figure figcaption h1 {
+  text-decoration: underline;
+}
+
+.carousel-list figure figcaption p {
+  font-size: 20px;
+}

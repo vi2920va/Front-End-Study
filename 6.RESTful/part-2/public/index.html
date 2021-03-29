@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To Do App - RESTful API</title>
+  <link href="http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="demo">
+
+  <div class="app">
+    <section class="app-view">
+      <header class="app-header">
+        <h1 class="a11y-hidden">할 일 등록 앱</h1>
+        <time class="app-time" datetime="2018-04-11">
+            <span class="app-time__year"><!-- 2018 --></span>
+            <span class="app-time__month"><!-- 04 --></span>
+            <span class="app-time__date"><!-- 11 --></span>
+          </time>
+      </header>
+      <div class="app-todos">
+        <figure class="app-loading-spinner">
+        <img src="images/lava-lamp-preloader.svg" alt>
+        <figcaption>데이터 로딩 중 ...</figcaption>
+      </figure>
+        <ul class="app-todo__list">
+        <!--
+          <li class="app-todo__item">
+            <time class="app-todo__item-time">06:30 am</time>
+            <strong class="app-todo__item-todo">모닝콜</strong>
+            <button type="button" class="app-todo__item-remove-button" aria-label="Remove To do"></button>
+          </li>
+          <li class="app-todo__item">
+            <time class="app-todo__item-time">01:00 pm</time>
+            <strong class="app-todo__item-todo">거래처 미팅 후, 점심 식사</strong>
+            <button type="button" class="app-todo__item-remove-button" aria-label="Remove To do"></button>
+          </li>
+          <li class="app-todo__item">
+            <time class="app-todo__item-time">04:20 pm</time>
+            <strong class="app-todo__item-todo">온라인 강의 촬영</strong>
+            <button type="button" class="app-todo__item-remove-button" aria-label="Remove To do"></button>
+          </li>
+          <li class="app-todo__item">
+            <time class="app-todo__item-time">07:20 pm</time>
+            <strong class="app-todo__item-todo">병원 진료</strong>
+            <button type="button" class="app-todo__item-remove-button" aria-label="Remove To do"></button>
+          </li>
+          <li class="app-todo__item">
+            <time class="app-todo__item-time">08:50 pm</time>
+            <strong class="app-todo__item-todo">부모님께 안부 전화</strong>
+            <button type="button" class="app-todo__item-remove-button" aria-label="Remove To do"></button>
+          </li>
+        -->
+        </ul>
+        <button type="button" class="app-todo__add-button" aria-label="Add To do"></button>
+        <div class="app-todo__input-bg"></div>
+        <div class="app-todo__input-field">
+          <label for="input-todo">할 일.</label>
+          <input type="text" id="input-todo">
+          <button type="button" class="app-todo__register-button" aria-label="Register To do"></button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+::-moz-selection {
+  background: #111;
+  color: #ffffff;
+}
+
+::selection {
+  background: #111;
+  color: #ffffff;
+}
+
+body * {
+  -webkit-tap-highlight-color: rgba(255,255,200,0.3);
+  tap-highlight-color: rgba(255,255,200,0.3);
+}
+
+/**
+ * Colors
+ * -------------------------
+ * black      : #000
+ * dark-gray  : #4c4c4c
+ * light-gray : #f2f2f2
+ * white      : #fff
+ */
+
+body {
+  margin: 0;
+  font: 14px/1.5 "Spoqa Han Sans", Helvetica, Arial, Sans-Serif;
+  color: #4c4c4c;
+  background: #dfe4e8;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  position: relative;
+  width: 308px;
+  height: 620px;
+}
+
+.app::before {
+  cursor: url("https://image.ibb.co/fFLh2H/HUD_fc_circle.png") 13 14, pointer;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 371px;
+  height: 678px;
+  z-index: 100;
+  background: url("https://preview.ibb.co/n3eWwc/i_Phone_x_frame.png") no-repeat;
+  background-size: contain;
+}
+
+.app * {
+  box-sizing: border-box;
+}
+
+.app-view {
+  overflow: hidden;
+  position: relative;
+  top: 23px;
+  left: 16px;
+  width: 273px;
+  height: 586px;
+  background: #f2f2f2;
+}
+
+.app-header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  height: 110px;
+  padding: 30px 15px 0;
+}
+
+.app-time {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 75px;
+}
+
+.app-time::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.app-time__year {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+.app-time__month {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.app-time__date {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.1em;
+}
+
+.app-todos {
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  height: 446px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.app-loading-spinner {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.app-todo__list {
+  overflow: auto;
+  position: relative;
+  z-index: 150;
+  margin: 20px 0 10px 0;
+  padding: 1.4em 1em;
+  height: 330px;
+  list-style: none;
+}
+
+.app-todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.app-todo__item-time {
+  font-size: 11px;
+  color: #c1c1c1;
+  flex: 0 0 50px;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.app-todo__item-todo {
+  flex: 1 0 55%;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #575757;
+}
+
+.app-todo__item-todo:focus {
+  outline-offset: 4px;
+  outline: 2px solid rgba(94, 168, 233, 0.214);
+  border-radius: 5px;
+  color: #000000;
+  background: rgba(250,250,0,0.02);
+}
+
+.app-todo__item-remove-button {
+  flex: 0 0 18px;
+  cursor: pointer;
+  height: 18px;
+  margin-top: 1px;
+  margin-right: 10px;
+  border: 0;
+  padding: 0;
+  background: url("https://image.ibb.co/iVmN2H/trash.png") no-repeat;
+  background-size: contain;
+  transition: all 0.15s ease-in;
+}
+
+.app-todo__item-remove-button:hover,
+.app-todo__item-remove-button:focus {
+  outline: none;
+  transform: scale(1.3);
+}
+
+.app-todo__add-button {
+  cursor: pointer;
+  position: absolute;
+  z-index: 200;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  bottom: 60px;
+  border: none;
+  padding: 0;
+  background: #373737;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  transition: all 0.15s ease-in;
+}
+
+.app-todo__add-button:hover {
+  background: #000;
+}
+
+.app-todo__add-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #aaa;
+}
+
+.app-todo__add-button::before {
+  content: '+';
+  position: relative;
+  top: 2px;
+  left: 1px;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 0.5;
+  color: #fff;
+}
+
+.app-todo__input-bg {
+  position: absolute;
+  z-index: 160;
+  left: 50%;
+  bottom: 40px;
+  width: 30px;
+  height: 30px;
+  background: #272728;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%) scale(0);
+          transform: translateX(-50%) scale(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.app-todo__input-bg.is-expand {
+  -webkit-transform: translateX(-50%) scale(30);
+          transform: translateX(-50%) scale(30);
+}
+
+.app-todo__input-field {
+  opacity: 0;
+  position: absolute;
+  z-index: 1000;
+  left: 15px;
+  right: 15px;
+  top: 145px;
+  bottom: 230px;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+  transition: all 0.4s ease-out 0.1s;
+}
+
+.app-todo__input-field.is-expand {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.app-todo__input-field label {
+  color: #777777;
+}
+
+.app-todo__input-field input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #636363;
+  padding: 0.4em 0.4em 0.1em 0.4em;
+  background: transparent;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  transition: all 0.15s ease-in;
+}
+
+.app-todo__input-field input:focus {
+  outline: none;
+  border-bottom-width: 4px;
+  border-bottom-color: #eee;
+}
+
+.app-todo__register-button {
+  cursor: pointer;
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  background: #777777;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  transition: all 0.15s ease-in;
+}
+
+.app-todo__register-button:hover {
+  background: #f2f2f2;
+}
+
+.app-todo__register-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #fff;
+}
+
+.a11y-hidden {
+  position: absolute !important;
+  top: -9999em;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+}

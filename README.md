@@ -1,7 +1,7 @@
 # TIL
 
 | 번호 |  카테고리  |                                               내용                                               | 비고 |
-| :--: | :--------: | :----------------------------------------------------------------------------------------------: | :--: | --- |
+| :--: | :--------: | :----------------------------------------------------------------------------------------------: | :--: |
 |  01  |    HTML    |                       Headings, Pargraph, Anchor, List, List item element                        |      |
 |  02  |    HTML    |                               Quotation, Text Formatting elements                                |      |
 |  03  |    HTML    |    html/root element, section elements, main element, semantic element, non semantic elements    |      |
@@ -23,7 +23,7 @@
 |  19  |    CSS     |                                       flex container, item                                       |      |
 |  20  |    CSS     |                                             multple                                              |      |
 |  21  |    CSS     |                                       grid container, item                                       |      |
-|  22  |    CSS     |                                   youtube mobile clone coding                                    |      |     |
+|  22  |    CSS     |                                   youtube mobile clone coding                                    |      |
 |  23  | JavaScript |                                        variable, datatype                                        |      |
 |  24  | JavaScript |                   condition statement, condition ternary expression, operators                   |      |
 |  25  | JavaScript |                                       Loops and iteration                                        |      |
@@ -37,3 +37,5 @@
 |  33  |    DOM     |                                       Document/Node method                                       |      |
 |  34  |    DOM     |                                        ElementNode mehtod                                        |      |
 |  35  |    DOM     |                                    HTML element style method                                     |      |
+|  36  |    DOM     |                                     CSSOM(CSS Object Model))                                     |      |
+|  37  |    AJAX    |                                    Live Sever, XMLHttpRequest                                    |      |

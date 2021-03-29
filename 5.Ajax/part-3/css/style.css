@@ -1,0 +1,38 @@
+body {
+  width: 740px;
+  margin: 100px auto;
+  font: 1rem/1.5 "Spoqa Han Sans";
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+nav li {
+  box-sizing: border-box;
+  flex: 1 0 50%;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 0.8em;
+  color: #7e7e7e;
+  border-top: 2px solid #d7d7d7;
+  border-bottom: 4px double #d7d7d7;
+  text-decoration: none;
+  transition: all 0.15s ease-out;
+}
+
+nav a:hover,
+nav a.is-active {
+  color: #1990c0;
+  border-color: #1990c0;
+  border-bottom: 4px solid #1990c0;
+}

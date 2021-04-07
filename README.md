@@ -40,3 +40,4 @@
 |  36  |    DOM     |                                     CSSOM(CSS Object Model))                                     |      |
 |  37  |    AJAX    |                                    Live Sever, XMLHttpRequest                                    |      |
 |  38  |  RESTful   |                                  REST, CRUD, JSON Server x CRUD                                  |      |
+|  39  | ECMAScript |                           Arrow function expressoin, String Additions                            |      |

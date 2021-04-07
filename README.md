@@ -37,9 +37,11 @@
 |  33  |    DOM     |                                       Document/Node method                                       |      |
 |  34  |    DOM     |                                        ElementNode mehtod                                        |      |
 |  35  |    DOM     |                                    HTML element style method                                     |      |
-|  36  |    DOM     |                                     CSSOM(CSS Object Model))                                     |      |
+|  36  |    DOM     |                                     CSSOM(CSS Object Model)                                      |      |
 |  37  |    AJAX    |                                    Live Sever, XMLHttpRequest                                    |      |
 |  38  |  RESTful   |                                  REST, CRUD, JSON Server x CRUD                                  |      |
 |  39  | ECMAScript |                           Arrow function expressoin, String Additions                            |      |
 |  40  | ECMAScript |                                Default Parameter, Rest Parameter                                 |      |
 |  41  | ECMAScript |                              Spread Operator, Shorthand Properties                               |      |
+|  42  | ECMAScript |                                       Object Enhancements                                        |      |
+|  43  | ECMAScript |                                 Destructuring Assignment, Symbol                                 |      |

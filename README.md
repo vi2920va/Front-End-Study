@@ -45,3 +45,4 @@
 |  41  | ECMAScript |                              Spread Operator, Shorthand Properties                               |      |
 |  42  | ECMAScript |                                       Object Enhancements                                        |      |
 |  43  | ECMAScript |                                 Destructuring Assignment, Symbol                                 |      |
+|  44  | ECMAScript |                                         Array Additions                                          |      |

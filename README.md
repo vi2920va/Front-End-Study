@@ -52,3 +52,4 @@
 |  48  | ECMAScript |                                              for~of                                              |      |
 |  49  | ECMAScript |                              Generator, Iteration Object, Protocols                              |      |
 |  50  | ECMAScript |                                             Map, Set                                             |      |
+|  51  | ECMAScript |                                         WeakMap, WeakSet                                         |      |

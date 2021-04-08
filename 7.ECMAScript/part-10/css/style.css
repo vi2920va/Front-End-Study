@@ -1,0 +1,35 @@
+.demo {
+    margin: 3rem;
+}
+
+.card-content {
+    padding: 0.5rem;
+}
+
+.columns {
+    margin: 0;
+}
+
+.a11y-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+}
+
+.a11y-hidden.focusable:focus {
+    overflow: visible;
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+caption.a11y-hidden {
+    position: static;
+}

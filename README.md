@@ -46,3 +46,4 @@
 |  42  | ECMAScript |                                       Object Enhancements                                        |      |
 |  43  | ECMAScript |                                 Destructuring Assignment, Symbol                                 |      |
 |  44  | ECMAScript |                                         Array Additions                                          |      |
+|  45  | ECMAScript |                                        Class and Exntends                                        |      |

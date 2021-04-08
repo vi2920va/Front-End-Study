@@ -1,0 +1,118 @@
+body {
+  margin: 40px;
+  background-color: #0629ae;
+  font-family: "Spoqa Han Sans", sans-serif;
+}
+
+.demo {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.project-link {
+  display: inline-block;
+}
+
+.project-link:focus {
+  outline: none;
+}
+
+.project-figure {
+  position: relative;
+  margin: 0;
+}
+
+.project-figure-hail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #f0544f;
+  border-radius: 40px;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+}
+.project-figure-hail2 {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 22px solid #f0544f;
+  border-radius: 22px;
+  transition: 0.7s;
+  transform: translate(-50%, -50%);
+}
+.img-masked {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+  clip-path: circle(20px at center);
+}
+.project-figure-name {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 150%;
+  max-width: 600px;
+  min-width: 150px;
+  padding: 3px 6px;
+  color: #000;
+  transition: 0.35s ease;
+}
+.project-figure-name::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #f0544f;
+  transition: 0.3s;
+}
+
+.project-link:hover .img-masked,
+.project-link:focus .img-masked {
+  clip-path: circle(100px at center);
+}
+
+.project-link:hover .project-figure-hail,
+.project-link:focus .project-figure-hail {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.project-link:hover .project-figure-hail2,
+.project-link:focus .project-figure-hail2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  border: 80px solid #fff4e6;
+  opacity: 0;
+}
+
+.project-link:hover .project-figure-name,
+.project-link:focus .project-figure-name {
+  left: 200%;
+  text-align: center;
+  opacity: 1;
+}
+
+.project-link:hover .project-figure-name:before,
+.project-link:focus .project-figure-name:before {
+  width: 100%;
+}

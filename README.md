@@ -48,3 +48,4 @@
 |  44  | ECMAScript |                                         Array Additions                                          |      |
 |  45  | ECMAScript |                                        Class and Exntends                                        |      |
 |  46  | ECMAScript |                                              Module                                              |      |
+|  47  | ECMAScript |                                             Promise                                              |      |
